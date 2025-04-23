@@ -1,0 +1,141 @@
+.footer-mallki {
+    width: 100vw;
+    background: #b89565;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 8px solid #22313a;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 24px 0 0 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+}
+
+.footer-logo {
+    width: 60px;
+    margin-bottom: 8px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #22313a;
+    font-size: 0.95em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.footer-title {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 1.3em;
+    color: #22313a;
+    font-weight: bold;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+.footer-divider {
+    width: 2px;
+    height: 90px;
+    background: #22313a;
+    margin: 0 32px;
+    opacity: 0.5;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+    color: #22313a;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.footer-contact-title {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.footer-email {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #22313a;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2px;
+}
+
+.footer-social-link img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    filter: grayscale(0.2);
+    transition: filter 0.2s;
+}
+
+.footer-social-link img:hover {
+    filter: grayscale(0) brightness(1.2);
+}
+
+.footer-social-user {
+    font-weight: bold;
+    color: #22313a;
+    margin-left: 8px;
+    font-size: 1em;
+}
+
+.footer-warning {
+    width: 100%;
+    text-align: center;
+    color: #22313a;
+    font-size: 1.25em;
+    letter-spacing: 0.18em;
+    margin: 18px 0 10px 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 18px 0 0 0;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .footer-left,
+    .footer-right {
+        min-width: 0;
+    }
+
+    .footer-warning {
+        font-size: 1em;
+        margin: 12px 0 8px 0;
+    }
+}

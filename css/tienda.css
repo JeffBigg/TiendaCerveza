@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.header-tienda {
+    background: #22313a;
+    padding: 0 0 0 32px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    border-bottom: 6px solid #b89565;
+    justify-content: space-between;
+}
+
+.logo-tienda {
+    height: 60px;
+}
+
+.nav-tienda {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-right: 40px;
+}
+
+.nav-tienda img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s;
+}
+
+.nav-tienda img:hover {
+    filter: brightness(1.5) invert(0.7) sepia(1) hue-rotate(30deg);
+}
+
+.productos-main {
+    padding: 32px 0 0 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.productos-title {
+    font-size: 2em;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #22313a;
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 32px;
+    /* Espacio para los precios debajo */
+}
+
+.producto {
+    background: #fff;
+    border: 2px solid #22313a;
+    border-radius: 8px;
+    width: 260px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 12px 18px 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.producto:hover {
+    box-shadow: 0 4px 16px rgba(34, 49, 58, 0.15);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.producto img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.producto a {
+    color: #22313a;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 6px;
+    font-size: 1.1em;
+    text-align: center;
+    display: block;
+}
+
+.producto .precio {
+    color: #22313a;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+    display: block;
+    margin-top: 0;
+}
+
+/* Elimina la lista de precios general si existe */
+.precios-lista {
+    display: none;
+}
+
+/* Precios generales debajo del grid */
+.precios-lista {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.precios-lista .precio-item {
+    color: #22313a;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    min-width: 220px;
+}
+
+@media (max-width: 900px) {
+    .productos-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .producto {
+        width: 90vw;
+        min-width: 0;
+    }
+
+    .precios-lista {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+}
+
+/* WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
