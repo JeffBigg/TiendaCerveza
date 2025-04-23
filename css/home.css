@@ -437,12 +437,17 @@ body {
 }
 
 .icono-cerveza-img {
-    width: 300px;
+    width: 22vw;
+    min-width: 80px;
+    max-width: 300px;
+    height: auto;
     margin-bottom: 18px;
     background: none;
     border-radius: 0;
     box-shadow: none;
     object-fit: contain;
+    display: block;
+    transition: width 0.3s;
 }
 
 .icono-cerveza p {
