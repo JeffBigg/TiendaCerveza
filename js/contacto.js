@@ -14,4 +14,15 @@ document.getElementById('form-contacto').addEventListener('submit', function (e)
     // Aquí puedes enviar los datos por AJAX o mostrar un mensaje de éxito
     alert('¡Gracias por contactarnos! Pronto te responderemos.');
     document.getElementById('form-contacto').reset();
+
+
+    window.addEventListener('scroll', function () {
+        var footer = document.querySelector('.footer-mallki');
+        if (window.scrollY > 100) { // Puedes ajustar el valor 100 según cuándo quieras mostrar el footer
+            footer.style.display = 'block';
+        } else {
+            footer.style.display = 'none';
+        }
+    });
+
 });
