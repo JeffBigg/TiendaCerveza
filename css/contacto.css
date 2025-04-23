@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     box-sizing: border-box;
-    overflow: hidden;
+
 }
 
 .contacto-container {
@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
 }
 
 .contacto-form {
