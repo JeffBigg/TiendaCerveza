@@ -58,6 +58,8 @@ body {
     box-sizing: border-box;
     padding-top: 70px;
     /* Espacio para el header fijo */
+    padding-bottom: 200px;
+    /* Espacio para el footer */
     position: relative;
 }
 
@@ -196,7 +198,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     background: #0B2735;
-    padding: 60px 0 0 0;
+    padding: 150px 0 250px 0;
 }
 
 .section-title {
