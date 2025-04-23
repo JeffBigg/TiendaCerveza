@@ -1,0 +1,154 @@
+body {
+    background: #444;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contacto-container {
+    background: #0d2a3a;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.contacto-separador {
+    border: none;
+    border-top: 4px dotted #b89565;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.contacto-titulo {
+    color: #fff;
+    font-size: 2.6em;
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-align: center;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+
+.contacto-subtitulo {
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 32px 0;
+    letter-spacing: 1px;
+}
+
+.contacto-inputs {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contacto-inputs input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #b89565;
+    border-radius: 6px;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+textarea {
+    width: 98%;
+    min-height: 90px;
+    padding: 12px;
+    border: 2px solid #b89565;
+    border-radius: 6px;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 18px;
+    resize: vertical;
+    outline: none;
+}
+
+.contacto-checkboxes {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.checkbox-label {
+    color: #bdbdbd;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #b89565;
+}
+
+.checkbox-label a {
+    color: #b89565;
+    text-decoration: underline;
+}
+
+.contacto-boton {
+    background: #b89565;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 48px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+    letter-spacing: 1px;
+}
+
+.contacto-boton:hover {
+    background: #a07a3a;
+}
+
+@media (max-width: 600px) {
+    .contacto-container {
+        padding: 12px 4px 24px 4px;
+    }
+
+    .contacto-inputs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contacto-checkboxes {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

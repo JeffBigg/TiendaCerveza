@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - MALLKI</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+    <div class="contacto-container">
+        <div class="contacto-form">
+            <hr class="contacto-separador">
+            <h1 class="contacto-titulo">COMUNICATE CON NOSOTROS</h1>
+            <h2 class="contacto-subtitulo">DÉJANOS TUS DATOS Y TE CONTACTAREMOS</h2>
+            <form id="form-contacto">
+                <div class="contacto-inputs">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
+                </div>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                <div class="contacto-checkboxes">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="mayor" required>
+                        Soy mayor de edad, acepto las <a href="#">condiciones legales</a> y la <a href="#">política de
+                            privacidad</a>.
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="promos">
+                        Quiero recibir E-mails sobre eventos y promociones.
+                    </label>
+                </div>
+                <button type="submit" class="contacto-boton">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>
