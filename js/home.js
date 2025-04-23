@@ -7,3 +7,10 @@ window.addEventListener('DOMContentLoaded', function () {
         document.getElementById('pack-img').classList.add('show-pack');
     }, 4000);
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-home');
+    toggle.addEventListener('click', function () {
+        nav.classList.toggle('show');
+    });
+});
